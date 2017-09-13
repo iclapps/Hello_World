@@ -1,0 +1,61 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:icl="http://www.ICLNBI.com/ICLNBI_V2.00.xsd">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <xsi:CreateDeviceRequest xsi:schemaLocation="http://www.ICLNBI.com/ICLNBI_V2.00.xsd ICL_V2.01.xsd" xmlns:xsi="http://www.ICLNBI.com/ICLNBI_V2.00.xsd">
+         <MessageElements>
+            <MessageAddressing>
+               <from>DSP</from>
+               <to>ICL</to>
+               <replyTo>DSP</replyTo>
+               <messageID>DSP12345</messageID>
+               <action>CreateDevice</action>
+               <timestamp>2008-09-29T07:19:46</timestamp>
+               <transactionID>1234</transactionID>
+               <serviceName>CreateDevice</serviceName>
+               <serviceVersion>3.0</serviceVersion>
+               <userId/>
+               <password/>
+            </MessageAddressing>
+         </MessageElements>
+         <Device>
+            <commonName>RAJESHNID//912/17</commonName>
+            <sourceSystem>ARM</sourceSystem>
+            <CLLICode>RAJESH91217</CLLICode>
+            <!--<locationCLLI>LSVGNVAF-CS-1</locationCLLI>-->
+            <ResourceType>Ciena LE4XX Family</ResourceType>
+            <ResourceSubType>Ciena LE410 DC</ResourceSubType>
+            <ResourceDescribedBy>
+               <CharacteristicName>isSharedOrDedicated</CharacteristicName>
+               <CharacteristicValue>Shared</CharacteristicValue>
+            </ResourceDescribedBy>
+            <ResourceDescribedBy>
+               <CharacteristicName>PortDirection</CharacteristicName>
+               <CharacteristicValue>CF</CharacteristicValue>
+            </ResourceDescribedBy>
+            <ResourceDescribedBy>
+               <CharacteristicName>MetaDataRequired</CharacteristicName>
+               <CharacteristicValue>True</CharacteristicValue>
+            </ResourceDescribedBy>
+            <ResourceDescribedBy>
+               <CharacteristicName>ManagementIPSubnetMask</CharacteristicName>
+               <CharacteristicValue>4.6.5.7</CharacteristicValue>
+            </ResourceDescribedBy>
+            <OwnsResourceDetails>
+               <Customer>
+                  <commonName>A002121</commonName>
+               </Customer>
+            </OwnsResourceDetails>
+            <prStatus>Planned</prStatus>
+            <InstalledAtAddress>
+               <commonName>D82858</commonName>
+            </InstalledAtAddress>
+            <HasPhysicalDeviceRoles>
+               <commonName>NID</commonName>
+            </HasPhysicalDeviceRoles>
+            <ConsistsOfRack>
+               <commonName>010004.085</commonName>
+            </ConsistsOfRack>
+         </Device>
+      </xsi:CreateDeviceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
